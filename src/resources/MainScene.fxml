@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="resources.MainController" prefHeight="1000.0" prefWidth="1000.0">
+    <children>
+        <ScrollPane fitToWidth="true" fitToHeight="true" VBox.vgrow="ALWAYS" hbarPolicy="AS_NEEDED" vbarPolicy="AS_NEEDED" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0">
+            <content>
+                <VBox alignment="CENTER" spacing="20.0" fillWidth="true">
+                    <Label text="Word Ladder Game" styleClass="big-title"/>
+                    <HBox alignment="CENTER">
+                        <Hyperlink text="by 13522047 Farel Winalda" onAction="#openWebLink"/>
+                    </HBox>
+                    <HBox alignment="CENTER" spacing="5" fx:id="startWordBox" styleClass="hbox" fillHeight="true">
+                        <Label text="Start Word:" styleClass="label"/>
+                    </HBox>
+                    <VBox alignment="CENTER" spacing="5" fx:id="userInputs" styleClass="vbox">
+                        <Label text="Transformations:" styleClass="label"/>
+                    </VBox>
+                    <HBox alignment="CENTER" spacing="5" fx:id="endWordBox" styleClass="hbox" fillHeight="true">
+                        <Label text="End Word:" styleClass="label"/>
+                    </HBox>
+                        <Button text="Enter Custom Words" onAction="#openCustomWordDialog" styleClass="custom-word-button" maxWidth="Infinity">
+                            <tooltip>
+                                <Tooltip text="Enter custom start and end words" />
+                            </tooltip>
+                        </Button>
+                        <Button text="Shuffle Words" onAction="#shuffleWords" styleClass="shuffle-button" maxWidth="Infinity">
+                            <tooltip>
+                                <Tooltip text="Shuffle and restart the game" />
+                            </tooltip>
+                        </Button>
+                    <HBox alignment="CENTER" spacing="10" fillHeight="true">
+                        <CheckBox fx:id="ucsCheckBox" text="UCS" onAction="#handleAlgorithmCheckbox" styleClass="ucsCheckBox"/>
+                        <CheckBox fx:id="gbfsCheckBox" text="Greedy BFS" onAction="#handleAlgorithmCheckbox" styleClass="gbfsCheckBox "/>
+                        <CheckBox fx:id="aStarCheckBox" text="A*" onAction="#handleAlgorithmCheckbox" styleClass="aStarCheckBox "/>
+                    </HBox>
+                    <TextFlow fx:id="resultTextFlow" prefHeight="200.0" prefWidth="400.0" styleClass="result-text-flow">
+                    </TextFlow>
+                    <HBox alignment="CENTER" spacing="20" fillHeight="true" styleClass="flex-container">
+                        <VBox fx:id="ucsResultsBox" spacing="5" styleClass="result-box" visible="false">
+                            <Label text="UCS Results:" styleClass="label-title"/>
+                        </VBox>
+                        <VBox fx:id="greedyResultsBox" spacing="5" styleClass="result-box" visible="false">
+                            <Label text="Greedy BFS Results:" styleClass="label-title"/>
+                        </VBox>
+                        <VBox fx:id="aStarResultsBox" spacing="5" styleClass="result-box" visible="false">
+                            <Label text="A* Results:" styleClass="label-title"/>
+                        </VBox>
+                    </HBox>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,195 @@
+.button, .hint-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-family: 'Montserrat', sans-serif;
+    -fx-font-size: 20px;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 0;
+    -fx-font-weight: Bold;
+}
+
+.custom-word-button {
+    -fx-max-width: 300px;
+    -fx-max-height: 50px;
+    -fx-background-color: #4f5af7;
+}
+
+.shuffle-button {
+    -fx-max-width: 200px;
+    -fx-max-height: 50px;
+    -fx-background-color: #4CAF50;
+}
+
+.hint-button {
+    -fx-max-width: 100px;
+    -fx-max-height: 50px;
+}
+
+.button:hover, .hint-button:hover {
+    -fx-background-color: #367c39;
+}
+
+.shuffle-button:hover{
+    -fx-background-color: #367c39;
+}
+
+.custom-word-button:hover {
+    -fx-background-color: #2a37ee;
+}
+
+.label-box {
+    -fx-font-size: 20px;
+    -fx-text-fill: #333;
+    -fx-font-family: 'Montserrat', sans-serif;
+    -fx-alignment: CENTER;
+}
+
+.hbox {
+    -fx-padding: 10px;
+    -fx-alignment: CENTER;
+}
+
+.vbox {
+    -fx-padding: 10px;
+    -fx-alignment: CENTER;
+}
+
+.text-field {
+    -fx-padding: 4px 6px;
+    -fx-font-family: 'Montserrat', sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-alignment: CENTER;
+    -fx-background-color: #e6e6e6;
+    -fx-text-fill: #0f0e0e;
+}
+
+.user-inputs-text-field {
+    -fx-text-fill: #333;  /* Light text color for better contrast against the background */
+}
+
+.big-title {
+    -fx-font-family: 'Montserrat', sans-serif;
+    -fx-font-size: 50px;
+    -fx-text-fill: #2a2a2a;
+    -fx-font-weight: bold;
+    -fx-padding: 30 0 0 0;
+}
+
+.hyperlink {
+    -fx-font-family: 'Montserrat', sans-serif;
+    -fx-text-fill: #0645ad;
+}
+
+.result-text-flow {
+    -fx-font-family: 'Montserrat', sans-serif;
+    -fx-font-size: 16px;
+    -fx-text-alignment: center;
+    -fx-padding: 10px;
+}
+
+.text-node {
+    -fx-fill: #333;
+}
+
+.flex-container {
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+}
+
+.result-box {
+    -fx-padding: 10px;
+    -fx-border-style: solid inside;
+    -fx-border-width: 1px;
+    -fx-border-insets: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #333;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 200px;
+}
+
+.label-title {
+    -fx-text-fill: #333;
+    -fx-font-family: 'Montserrat', sans-serif;
+    -fx-padding: 4px 8px;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+
+.time-label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #555;
+    -fx-padding: 2px;
+}
+
+.result-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #555;
+    -fx-padding: 2px;
+}
+
+.vbox * {
+    -fx-text-fill: #333;
+}
+
+.dialog-pane {
+    -fx-background-color: #f8f8f8;
+    -fx-border-color: #c3c4c4;
+    -fx-border-width: 1px;
+}
+
+.dialog-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: #333;
+    -fx-font-weight: bold;
+}
+
+.dialog-text-field {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #333;
+    -fx-border-color: #888;
+}
+
+.dialog-label {
+    -fx-text-fill: #333;
+    -fx-font-weight: bold;
+}
+
+.dialog-button-done {
+    -fx-background-color: #4CAF50;  /* Green */
+    -fx-text-fill: #eee;
+    -fx-font-weight: bold;
+}
+
+.dialog-button-cancel {
+    -fx-background-color: #f44336;  /* Red */
+    -fx-text-fill: #eee;
+    -fx-font-weight: bold;
+}
+
+.dialog-button-cancel:hover {
+    -fx-background-color: #ad150a;
+}
+
+.dialog-text-field {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #333;
+    -fx-border-color: #888;
+    -fx-alignment: baseline-left; /* Align text to the left */
+}
+
+#ucsCheckBox {
+    -fx-font-size: 14px; 
+    -fx-text-fill: #333333; 
+}
+
+#gbfsCheckBox {
+    -fx-font-size: 14px; 
+    -fx-text-fill: #333333; 
+}
+
+#aStarCheckBox {
+    -fx-font-size: 14px; 
+    -fx-text-fill: #333333; 
+}
