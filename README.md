@@ -56,6 +56,7 @@ cd Tucil3_13522047
 set MODULE_PATH=D:\Coding\Lib\javafx-sdk-22.0.1\lib
 ```
 
+On Windows:
 4. Compile the program:
 ```shell
 ./build
@@ -65,6 +66,24 @@ set MODULE_PATH=D:\Coding\Lib\javafx-sdk-22.0.1\lib
 ```shell
 ./run
 ```
+
+On Linux
+4. Compile the program:
+```shell
+chmod +x build.sh
+chmod +x run.sh
+```
+
+5. Compile the program:
+```shell
+./build
+```
+
+6. Run the program:
+```shell
+./run
+```
+
 
 ## File Structures Overview
 This repository contains main folder structure such as _doc_, _public_, and _src_.
@@ -103,7 +122,9 @@ This repository contains main folder structure such as _doc_, _public_, and _src
 ├── .gitignore
 ├── README.md
 ├── build.bat
-└── run.bat
+├── run.bat
+├── build.sh
+└── run.sh
 ```
 
 ## Links

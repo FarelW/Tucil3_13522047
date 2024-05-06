@@ -411,29 +411,30 @@ public class MainController {
         titleLabel.getStyleClass().add("label-title");
         resultsBox.getChildren().add(titleLabel);
     
+        // Always display the time and words checked, regardless of whether a path was found
+        Label timeLabel = new Label(String.format("Time: %.2f ms", searchResult.getElapsedTime() / 1_000_000.0));
+        timeLabel.getStyleClass().add("time-label");
+        resultsBox.getChildren().add(timeLabel);
+    
+        Label wordsCheckedLabel = new Label("Words Checked: " + searchResult.getWordCheckCount());
+        wordsCheckedLabel.getStyleClass().add("result-label");
+        resultsBox.getChildren().add(wordsCheckedLabel);
+    
+        // Check if a path was found and display accordingly
         if (searchResult.getFirstFoundPath().isEmpty()) {
             Label notFoundLabel = new Label("No results found.");
             notFoundLabel.getStyleClass().add("result-label");
             resultsBox.getChildren().add(notFoundLabel);
         } else {
-            Label timeLabel = new Label(String.format("Time: %.2f ms", searchResult.getElapsedTime() / 1_000_000.0));
-            timeLabel.getStyleClass().add("time-label");
-            resultsBox.getChildren().add(timeLabel);
-
-            
-            Label pathsFoundLabel = new Label("Words Checked: " + searchResult.getWordCheckCount());
-            pathsFoundLabel.getStyleClass().add("result-label");
-            resultsBox.getChildren().add(pathsFoundLabel);
-            
             Label resLabel = new Label("Result Path:");
             resLabel.getStyleClass().add("result-label");
             resultsBox.getChildren().add(resLabel);
+    
             searchResult.getFirstFoundPath().forEach(word -> {
                 Label resultLabel = new Label(word);
                 resultLabel.getStyleClass().add("result-label");
                 resultsBox.getChildren().add(resultLabel);
             });
-
         }
     }
 
