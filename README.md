@@ -35,11 +35,11 @@ In this project, I make an application to guest the word like a WordLadder game 
 
 To run this project, you will need to perform several installations, including:
 - `Java Development Kit (JDK)` : You'll need JDK 11 or later because JavaFX was decoupled from the JDK starting from Java 11.
-- `JavaFX SDK` : JavaFX is no longer included with the JDK from Java 11 onward, you need to download it separately. For [Windows](https://download2.gluonhq.com/openjfx/22.0.1/openjfx-22.0.1_windows-x64_bin-sdk.zip) and for [Linux](https://download2.gluonhq.com/openjfx/22.0.1/openjfx-22.0.1_linux-x64_bin-sdk.zip)
+- `JavaFX SDK` : JavaFX is no longer included with the JDK from Java 11 onward, you need to download it separately. I am using JavaFX version 22. For [Windows](https://download2.gluonhq.com/openjfx/22.0.1/openjfx-22.0.1_windows-x64_bin-sdk.zip) and for [Linux](https://download2.gluonhq.com/openjfx/22.0.1/openjfx-22.0.1_linux-x64_bin-sdk.zip)
 
 ## Installation
 
-If you want to run this program you will have 2 terminal opened for the GameEngine and Bot
+If you want to run this program you will have a terminal on the root directory and make sure you've already installed the prerequisites
 
 1. Clone this repository :
 ```shell
