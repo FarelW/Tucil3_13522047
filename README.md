@@ -51,7 +51,7 @@ git clone https://github.com/FarelW/Tucil3_13522047
 cd Tucil3_13522047
 ```
 
-3. Edit the MODULE_PATH in both build.bat and run.bat file & located it in same location that you installed the javafx library (for example i installed on D drive):
+3. Edit the ```MODULE_PATH``` in both ```build.bat``` and ```run.bat``` file & located it in same location that you installed the ```javafx library``` (for example i installed on D drive):
 ```shell
 set MODULE_PATH=D:\Coding\Lib\javafx-sdk-22.0.1\lib
 ```
@@ -63,7 +63,7 @@ set MODULE_PATH=D:\Coding\Lib\javafx-sdk-22.0.1\lib
 
 5. Run the program:
 ```shell
-./build
+./run
 ```
 
 ## File Structures Overview
