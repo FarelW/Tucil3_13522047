@@ -57,6 +57,7 @@ set MODULE_PATH=D:\Coding\Lib\javafx-sdk-22.0.1\lib
 ```
 
 On Windows:
+
 4. Compile the program:
 ```shell
 ./build
@@ -67,7 +68,8 @@ On Windows:
 ./run
 ```
 
-On Linux
+On Linux:
+
 4. Compile the program:
 ```shell
 chmod +x build.sh
@@ -76,12 +78,12 @@ chmod +x run.sh
 
 5. Compile the program:
 ```shell
-./build
+./build.sh
 ```
 
 6. Run the program:
 ```shell
-./run
+./run.sh
 ```
 
 
