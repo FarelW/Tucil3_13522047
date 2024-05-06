@@ -1,5 +1,5 @@
 <h1 align="center">Tugas Kecil 3 IF2211 Strategi Algoritma</h1>
-<h1 align="center">13522047 - Farel Winalda</h3>
+<h3 align="center">13522047 - Farel Winalda</h3>
 <h3 align="center">UCS Algorithm, Greedy Best First Search, and A* Implementation in Solving the Word Ladder Game</p>
 
 ## Table of Contents
